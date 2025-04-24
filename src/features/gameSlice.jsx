@@ -3,7 +3,7 @@ import { defaultState } from '../utils';
 
 export const gameSlice = createSlice({
     name: 'game',
-    initialState: deafaultState(),
+    initialState: defaultState(),
     reducers: {
         pause: () => {},
         resume: () => {},

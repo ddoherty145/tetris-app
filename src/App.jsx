@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Tetris Redux!</h1>
+        <h2>App Loaded</h2>
       </header>
       <GridBoard />
       <NextBlock />
