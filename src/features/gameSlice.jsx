@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { defaultState } from '../utils';
 
+console.log(defaultState, 'defaultState');
+
 export const gameSlice = createSlice({
     name: 'game',
     initialState: defaultState(),

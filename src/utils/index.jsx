@@ -1,4 +1,4 @@
-import { gameOver } from "../features/gameSlice";
+// import { gameOver } from "../features/gameSlice";
 
 export const random = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -159,15 +159,17 @@ export const randomShape = () => {
     return random(1, shapes.length -1);
 };
 
-export const defaultState =  {
-  grid: gridDefault(),
-  shape: randomShape(),
-  rotation: 0,
-  x: 5,
-  y: -4,
-  nextShape: randomShape(),
-  isRunning: true,
-  score: 0,
-  speed: 1000,
-  gameOver: false
+export const defaultState = () => {
+  return {
+    grid: gridDefault(),
+    shape: randomShape(),
+    rotation: 0,
+    x: 5,
+    y: -4,
+    nextShape: randomShape(),
+    isRunning: true,
+    score: 0,
+    speed: 1000,
+    gameOver: false
+ }
 };
