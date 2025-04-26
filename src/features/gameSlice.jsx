@@ -20,7 +20,7 @@ export const gameSlice = createSlice({
 
 // Action creators
 export const {
-    moveleft,
+    moveLeft,
     moveRight,
     moveDown,
     rotate,
