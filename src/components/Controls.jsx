@@ -4,7 +4,7 @@ import { moveLeft, moveRight, moveDown, rotate } from "../features/gameSlice";
 
 export default function Controls(){
     const dispatch = useDispatch();
-    const { isRunning } = useSelector((state) => state);
+    const { isRunning } = useSelector((state) => state.game);
     return (
         <div className="controls">
             {/* Left */}
