@@ -70,8 +70,12 @@ export const gameSlice = createSlice({
             } 
             return state;
         },
-        gameOver: () => {},
-        restart: () => {},
+        gameOver: (state) => {
+            state.gameOver = true;
+        },
+        restart: () => {
+            return defaultState();
+        },
     },
 });
 

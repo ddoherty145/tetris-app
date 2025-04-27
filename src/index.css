@@ -4,6 +4,10 @@
   --border-top-color: rgba(255, 255, 255, 0.33);
   --border-right-color: rgba(0, 0, 0, 0.15);
   --border-bottom-color: rgba(0, 0, 0, 0.5);
+  --button-color-t: rgba(255, 255, 255, 0.4);
+  --button-color-r: rgba(0, 0, 0, 0.4);
+  --button-color-b: rgba(0, 0, 0, 0.8);
+  --button-color-l: rgba(255, 255, 255, 0.8);
   --color-0: #eaeaea;
   --color-1: #ff6600;
   --color-2: #eec900;
@@ -103,6 +107,7 @@
   grid-area: b;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .control-button {
@@ -123,8 +128,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: clac(var(--tile-size) * 10);
-  height: clac(var(--tile-size) * 10);
+  width: calc(var(--tile-size) * 10);
+  height: calc(var(--tile-size) * 10);
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }

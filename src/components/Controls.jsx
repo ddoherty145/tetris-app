@@ -14,7 +14,7 @@ export default function Controls(){
         requestRef.current = requestAnimationFrame(update);
 
         if (!isRunning) return;
-        if (lastUpdateTimeRef.current) {
+        if (lastUpdateTimeRef.current === 0) {
             lastUpdateTimeRef.current = time;
         }
         const deltaTime = time - lastUpdateTimeRef.current;

@@ -225,7 +225,7 @@ export const defaultState = () => {
     grid: gridDefault(),
     shape: randomShape(),
     rotation: 0,
-    x: 5,
+    x: 3,
     y: -4,
     nextShape: randomShape(),
     isRunning: true,
